@@ -11,7 +11,8 @@ public class Main {
             d) proszę używać super do wywołania konstruktorów i metod z klas nadrzędnych
             (można wygenerować je --> prawy przycisk myszki --> generate --> settery, gettery, ...),
             e) w klasie Main proszę stworzyć objekty podobnie jak w przykładzie 5,
-            oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>
+            oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>,
+            f) wyświetlić dane
          */
 
     }
