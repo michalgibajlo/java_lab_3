@@ -18,7 +18,55 @@ public class Main {
         */
 
         /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
-        * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
+         * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
+
+        Scanner scan = new Scanner(System.in);
+        while (true)
+        {
+            System.out.print("Wprowadź liczbę: ");
+            int x = scan.nextInt();
+            if (x==0) {break;}
+            switch (x)
+            {
+                case 1:
+                    System.out.println(liczby.jeden+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 2:
+                    System.out.println(liczby.dwa+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 3:
+                    System.out.println(liczby.trzy+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 4:
+                    System.out.println(liczby.cztery+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 5:
+                    System.out.println(liczby.piec+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 6:
+                    System.out.println(liczby.szesc+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 7:
+                    System.out.println(liczby.siedem+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 8:
+                    System.out.println(liczby.osiem+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 9:
+                    System.out.println(liczby.dziewiec+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 10:
+                    System.out.println(liczby.dziesiec+" "+StatusEnum.KONTYNUUJEMY);
+                    break;
+                default:
+                    System.out.println("Liczba spoza zakresu, "+StatusEnum.KONTYNUUJEMY);
+            }
+
+        }
+        System.out.println("Kończę pracę, "+StatusEnum.KONIEC);
 
     }
 }
+
+enum liczby {jeden, dwa, trzy, cztery, piec, szesc, siedem, osiem, dziewiec, dziesiec}
+enum StatusEnum {KONTYNUUJEMY, KONIEC}
