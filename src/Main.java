@@ -14,5 +14,18 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+
+        Student Michal = new Student();
+        Student A = new Student();
+        Student B = new Student();
+
+        Michal.imie="Michal"; Michal.nazwisko="Gibajlo"; Michal.wiek=27; Michal.przyjety=true;
+        A.imie="Jan"; A.nazwisko="Kowalski"; A.wiek=23; A.przyjety=true;
+        B.imie="Krzysztof"; B.nazwisko="Nowak"; B.wiek=31; B.przyjety=false;
+
+        String[][] tablica = new String[][]{
+                {Michal.imie, Michal.nazwisko}
+        };
+
     }
 }
