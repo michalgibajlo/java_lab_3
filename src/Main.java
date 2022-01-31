@@ -14,6 +14,7 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+        System.out.println("Zadanie 1:");
 
         Student Michal = new Student();
         Student A = new Student();
@@ -23,9 +24,18 @@ public class Main {
         A.imie="Jan"; A.nazwisko="Kowalski"; A.wiek=23; A.przyjety=true;
         B.imie="Krzysztof"; B.nazwisko="Nowak"; B.wiek=31; B.przyjety=false;
 
-        String[][] tablica = new String[][]{
-                {Michal.imie, Michal.nazwisko}
-        };
+        String[] Timie = new String[] {Michal.imie, A.imie, B.imie};
+        String[] Tnazwisko = new String[] {Michal.nazwisko, A.nazwisko, B.nazwisko};
+        Integer[] Twiek = new Integer[] {Michal.wiek, A.wiek, B.wiek};
+        Boolean[] Tprzyjety = new Boolean[] {Michal.przyjety, A.przyjety, B.przyjety};
+
+        for (int a=0; a<=2; a++)
+        {
+            System.out.print(Timie[a]+" ");
+            System.out.print(Tnazwisko[a]+" ");
+            System.out.print(Twiek[a]+" ");
+            System.out.println(Tprzyjety[a]);
+        }
 
     }
 }
