@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,6 +16,25 @@ public class Main {
             oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>,
             f) wyświetlić dane
          */
+
+        Samochod A01 = new Samochod(EnumMarka.Audi, 5);
+        Samochod T01 = new Samochod(EnumMarka.Toyota, 4);
+        Samochod B01 = new Samochod(EnumMarka.BMW, 2);
+
+        SUV suv1 = new SUV(A01, EnumModel.Q7, 2019);
+        SUV suv2 = new SUV(T01, EnumModel.Rav4, 2022);
+        SUV suv3 = new SUV(B01, EnumModel.X6, 2017);
+
+        ArrayList<SUV> cars =new ArrayList<SUV>();
+            cars.add(suv1);
+            cars.add(suv2);
+            cars.add(suv3);
+
+        System.out.println(A01.toString()+" "+suv1.toString());
+        System.out.println(T01.toString()+" "+suv2.toString());
+        System.out.println(B01.toString()+" "+suv3.toString());
+
+
 
     }
 }
